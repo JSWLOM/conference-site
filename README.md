@@ -1,5 +1,5 @@
 ## open app
- conference-site-dun-six.vercel.app
+ https://conference-site-dun-six.vercel.app
 
 ## Built with
 
