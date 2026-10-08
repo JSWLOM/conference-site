@@ -1,5 +1,5 @@
 ## open app
- https://conference-site-dun-six.vercel.app
+ https://icetbls.vercel.app
 
 ## Built with
 
