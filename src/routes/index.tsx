@@ -59,6 +59,80 @@ const themes = [
   "Emerging Trends in Life Sciences and Sustainable Innovation",
 ];
 
+const keynoteSpeakers = [
+  {
+    name: "Prof. Sarva Mangala Praveena",
+    title: "Professor, Department of Environmental and Occupational Health, Faculty of Medicine and Health Sciences, Universiti Putra Malaysia, Malaysia",
+    image: "/speakers/sarva-mangala-praveena.jpeg",
+  },
+  {
+    name: "Dr. Sarvendra Kumar",
+    title: "Senior Scientist, Soil Science and Agricultural Chemistry (SSAC), ICAR-Indian Agricultural Research Institute, New Delhi",
+  },
+  {
+    name: "Dr. Santosh Kumar Singh",
+    title: "Senior Scientist (Level-14) & Coordinator, Centre of Experimental Medicine and Surgery (CEMS), Faculty of Medicine, Institute of Medical Sciences, Banaras Hindu University, Varanasi, India",
+    image: "/speakers/santosh-kumar-singh.jpeg",
+  },
+  {
+    name: "Dr. Vishal Mishra",
+    title: "Associate Professor, School of Biochemical Engineering, IIT (BHU), Varanasi, India",
+    image: "/speakers/vishal-mishra.jpeg",
+  },
+  {
+    name: "Prof. Mohan P Singh",
+    title: "Professor, Centre of Biotechnology, University of Allahabad, Prayagraj, India",
+    image: "/speakers/mohan-p-singh.jpeg",
+  },
+  {
+    name: "Prof. Dr. Sanjat Sahu",
+    title: "Emeritus Professor, Department of Environmental Sciences, Berhampur University, Odisha, India",
+    image: "/speakers/sanjat-sahu.jpeg",
+  },
+  {
+    name: "Dr. Ashish Kumar",
+    title: "Scientist-D, Department of Biochemistry, ICMR Rajendra Memorial National Institute of Health Research (ICMR-RM NIHR), Patna, India",
+    image: "/speakers/ashish-kumar.jpeg",
+  },
+  {
+    name: "Prof. Rajesh Mishra",
+    title: "Professor, School of Biotechnology, Jawaharlal Nehru University, New Delhi, India",
+    image: "/speakers/rajesh-mishra.jpeg",
+  },
+];
+
+const publicationOpportunities = [
+  {
+    name: "Journal of Applied Biology & Biotechnology",
+    shortName: "JABB",
+    description:
+      "A peer-reviewed, open-access journal publishing original research articles, reviews and short communications in applied biology, biotechnology and related life science disciplines.",
+    indexing: "Scopus and other databases, subject to current coverage verification.",
+    linkLabel: "Visit journal",
+    url: "https://jabonline.in/",
+    accent: "border-t-accent",
+  },
+  {
+    name: "Vegetos",
+    subtitle: "An International Journal of Plant Research and Biotechnology",
+    description:
+      "Published by Springer Nature, Vegetos focuses on plant research, plant biotechnology and related areas of plant science.",
+    indexing: "Scopus, subject to current coverage verification.",
+    linkLabel: "Visit journal",
+    url: "https://link.springer.com/journal/42535",
+    accent: "border-t-chart-2",
+  },
+  {
+    name: "Bentham Science — Book Chapter Opportunity",
+    description:
+      "Selected contributions relevant to the proposed book’s scope may be invited as full-length chapters, subject to confirmation of the publishing arrangement, editorial evaluation and publisher approval.",
+    indexing: "Bentham Science Publishers",
+    linkLabel: "Visit publisher",
+    url: "https://benthambooks.com/",
+    accent: "border-t-chart-3",
+  },
+];
+
 const fees = [
   { category: "UG/PG Students", fee: "₹ 1,500" },
   { category: "Research Scholars", fee: "₹ 3,000" },
@@ -137,8 +211,10 @@ const sdgs = [
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#themes", label: "Themes" },
+  { href: "#publications", label: "Publications" },
   { href: "#dates", label: "Dates" },
   { href: "#fees", label: "Registration" },
+  { href: "#speakers", label: "Speakers" },
   { href: "#leadership", label: "Leadership" },
   { href: "#venue", label: "Venue" },
   { href: "#contact", label: "Contact" },
@@ -159,7 +235,7 @@ function Index() {
               </span>
             </span>
           </a>
-          <nav className="hidden items-center gap-6 text-sm font-medium text-muted-foreground lg:flex">
+          <nav className="hidden items-center gap-4 text-xs font-medium text-muted-foreground lg:flex">
             {navLinks.map((l) => (
               <a key={l.href} href={l.href} className="nav-underline transition-colors hover:text-primary">
                 {l.label}
@@ -336,6 +412,93 @@ function Index() {
         </div>
       </section>
 
+      {/* Publication opportunities */}
+      <section id="publications" className="border-b border-border bg-secondary/50">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="section-label">For Conference Participants</p>
+            <h2 className="mt-2 font-display text-3xl font-semibold text-balance sm:text-4xl">
+              Publication Opportunities
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+              ICETBLS-2026 provides publication opportunities for selected research contributions
+              through academic journals and book publishing initiatives. Submissions are considered
+              according to each journal’s or publisher’s scope, editorial policies, peer-review
+              procedures and acceptance criteria.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {publicationOpportunities.map((opportunity) => (
+              <article
+                key={opportunity.name}
+                className={`flex h-full flex-col overflow-hidden rounded-lg border border-border border-t-4 ${opportunity.accent} bg-card`}
+              >
+                <div className="flex min-h-36 flex-col justify-between bg-primary px-6 py-5 text-primary-foreground">
+                  <span className="text-[10px] font-bold tracking-[0.18em] text-primary-foreground/65 uppercase">
+                    {opportunity.shortName ?? "Publication pathway"}
+                  </span>
+                  <div>
+                    <h3 className="font-display text-xl leading-snug font-semibold">
+                      {opportunity.name}
+                    </h3>
+                    {opportunity.subtitle && (
+                      <p className="mt-1 text-xs leading-snug text-primary-foreground/75">
+                        {opportunity.subtitle}
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {opportunity.description}
+                  </p>
+                  <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
+                    <span className="font-semibold text-foreground">
+                      {opportunity.shortName ? "Indexing: " : "Publisher: "}
+                    </span>
+                    {opportunity.indexing}
+                  </p>
+                  <a
+                    href={opportunity.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-anim mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-xs font-bold text-primary-foreground uppercase"
+                  >
+                    <Globe className="size-4" />
+                    {opportunity.linkLabel}
+                    <ArrowRight className="size-3.5" />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-6 rounded-lg border border-border bg-card px-5 py-4 text-xs leading-relaxed text-muted-foreground">
+            <p className="font-semibold text-foreground">Important publication information</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>Conference submission or presentation does not guarantee publication.</li>
+              <li>
+                Journal articles are subject to each journal’s independent editorial assessment,
+                peer review and final acceptance.
+              </li>
+              <li>
+                Book chapters depend on confirmation of the proposed book project, editorial
+                approval and publisher requirements.
+              </li>
+              <li>
+                Authors must follow the relevant publication guidelines, including originality,
+                research ethics, formatting and any applicable charges.
+              </li>
+              <li>
+                Indexing must be verified for the specific title and coverage period; no indexing
+                or publication guarantee is implied.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Dates + Fees */}
       <section className="mx-auto grid max-w-6xl gap-16 px-4 py-20 sm:px-6 lg:grid-cols-2">
         <div id="dates">
@@ -430,6 +593,75 @@ function Index() {
                 journal or book series, subject to peer review and publisher policies.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Chief guest and keynote speakers */}
+      <section id="speakers" className="border-y border-border bg-card">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <div className="mb-12 text-center">
+            <p className="section-label">National and International Experts</p>
+            <h2 className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
+              Speakers
+            </h2>
+          </div>
+
+          <article className="mx-auto mb-12 grid max-w-4xl overflow-hidden rounded-lg border border-border bg-background sm:grid-cols-[minmax(14rem,0.8fr)_1.2fr]">
+            <img
+              src="/speakers/dulal-panda.jpeg"
+              alt="Prof. Dulal Panda"
+              className="h-64 w-full object-cover object-center sm:h-full"
+            />
+            <div className="flex flex-col justify-center p-6 sm:p-10">
+              <p className="section-label">Chief Guest</p>
+              <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
+                Prof. Dulal Panda
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Director, National Institute of Pharmaceutical Education and Research (NIPER),
+                S.A.S. Nagar (Mohali), Punjab, India
+              </p>
+            </div>
+          </article>
+
+          <div className="mb-6 flex items-end justify-between gap-4 border-b border-border pb-3">
+            <h3 className="font-display text-2xl font-semibold">Keynote Speakers</h3>
+            <span className="text-xs font-semibold text-muted-foreground">
+              {keynoteSpeakers.length} speakers
+            </span>
+          </div>
+          <div className="grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            {keynoteSpeakers.map((speaker) => (
+              <article key={speaker.name} className="overflow-hidden rounded-lg border border-border bg-background">
+                {speaker.image ? (
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="h-52 w-full object-cover object-center"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div
+                    aria-label={`${speaker.name} portrait unavailable`}
+                    className="grid h-52 w-full place-items-center bg-secondary font-display text-4xl font-semibold text-primary"
+                  >
+                    {speaker.name
+                      .split(" ")
+                      .filter((part) => part.length > 1)
+                      .slice(0, 2)
+                      .map((part) => part[0])
+                      .join("")}
+                  </div>
+                )}
+                <div className="p-4">
+                  <h4 className="text-sm leading-snug font-bold">{speaker.name}</h4>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                    {speaker.title}
+                  </p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
