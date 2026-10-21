@@ -142,7 +142,7 @@ const fees = [
 ];
 
 const dates = [
-  { label: "Abstract Submission Deadline", date: "20 October 2026" },
+  { label: "Abstract Submission Deadline", date: "31 October 2026" },
   { label: "Full Paper Submission Deadline", date: "15 November 2026" },
   { label: "Review Period", date: "16 – 30 November 2026" },
   { label: "Acceptance Notification", date: "5 December 2026" },
@@ -571,7 +571,7 @@ function Index() {
               <h3 className="font-display text-2xl font-semibold">Submit Your Abstract</h3>
               <p className="mt-2 text-sm text-primary-foreground/75">
                 Share your research with an international audience. Abstract submission is open
-                until 20 October 2026.
+                until 31 October 2026.
               </p>
               <a
                 href={ABSTRACT_URL}
