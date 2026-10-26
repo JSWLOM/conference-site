@@ -68,6 +68,7 @@ const keynoteSpeakers = [
   {
     name: "Dr. Sarvendra Kumar",
     title: "Senior Scientist, Soil Science and Agricultural Chemistry (SSAC), ICAR-Indian Agricultural Research Institute, New Delhi",
+    image: "/speakers/sarvendra-kumar.jpg.jpeg",
   },
   {
     name: "Dr. Santosh Kumar Singh",
@@ -98,6 +99,11 @@ const keynoteSpeakers = [
     name: "Prof. Rajesh Mishra",
     title: "Professor, School of Biotechnology, Jawaharlal Nehru University, New Delhi, India",
     image: "/speakers/rajesh-mishra.jpeg",
+  },
+  {
+    name: "Prof. (Dr.) Suboddh Bhatnagar",
+    title: "Founder Chairman, SPR & Editor in Chief, VEGETOS",
+    image: "/speakers/suboddh-bhatnagar.jpeg",
   },
 ];
 
