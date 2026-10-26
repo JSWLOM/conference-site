@@ -101,9 +101,9 @@ const keynoteSpeakers = [
     image: "/speakers/rajesh-mishra.jpeg",
   },
   {
-    name: "Prof. (Dr.) Suboddh Bhatnagar",
+    name: "Prof. (Dr.) Subodh Bhatnagar",
     title: "Founder Chairman, SPR & Editor in Chief, VEGETOS",
-    image: "/speakers/suboddh-bhatnagar.jpeg",
+    image: "/speakers/subodh-bhatnagar.jpeg",
   },
 ];
 
