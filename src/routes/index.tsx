@@ -148,10 +148,10 @@ const fees = [
 ];
 
 const dates = [
-  { label: "Abstract Submission Deadline", date: "31 October 2026" },
-  { label: "Full Paper Submission Deadline", date: "15 November 2026" },
-  { label: "Review Period", date: "16 – 30 November 2026" },
-  { label: "Acceptance Notification", date: "5 December 2026" },
+  { label: "Abstract Submission Deadline", date: "25 November 2026" },
+  { label: "Full Paper Submission Deadline", date: "10 December 2026" },
+  { label: "Review Period", date: "10 – 15 December 2026" },
+  { label: "Acceptance Notification", date: "Following Editorial Evaluation" },
 ];
 
 const leadership = [
