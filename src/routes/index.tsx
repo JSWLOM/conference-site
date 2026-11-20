@@ -426,21 +426,27 @@ function Index() {
             <h2 className="mt-2 font-display text-3xl font-semibold text-balance sm:text-4xl">
               Publication Opportunities
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              ICETBLS-2026 provides publication opportunities for selected research contributions
-              through academic journals and book publishing initiatives. Submissions are considered
-              according to each journal’s or publisher’s scope, editorial policies, peer-review
-              procedures and acceptance criteria.
+            <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+  <p>
+    ICETBLS-2026 provides publication opportunities for selected research contributions
+    through academic journals and book publishing initiatives. Submissions are considered
+    according to each journal’s or publisher’s scope, editorial policies, peer-review
+    procedures and acceptance criteria.
+  </p>
 
-              Selected high-quality abstracts will be considered for presentation at ICETBLS-2026.
-              Authors of selected contributions will be invited to submit their full-length manuscripts for possible 
-              publication in suitable Scopus-indexed journals or book series.
+  <p>
+    Selected high-quality abstracts will be considered for presentation at ICETBLS-2026.
+    Authors of selected contributions will be invited to submit their full-length manuscripts for possible 
+    publication in suitable Scopus-indexed journals or book series.
+  </p>
 
-              Following full-paper submission, authors may be requested by the respective journal editors or 
-              publishers to revise and reformat their manuscripts according to the prescribed journal or book-series guidelines.
-              All submissions will undergo the applicable editorial assessment and peer-review process.
-              Final publication decisions will be made by the respective editors and publishers, based on manuscript quality, scope, reviewer comments and editorial policies.
-            </p>
+  <p>
+    Following full-paper submission, authors may be requested by the respective journal editors or 
+    publishers to revise and reformat their manuscripts according to the prescribed journal or book-series guidelines.
+    All submissions will undergo the applicable editorial assessment and peer-review process.
+    Final publication decisions will be made by the respective editors and publishers, based on manuscript quality, scope, reviewer comments and editorial policies.
+  </p>
+</div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
