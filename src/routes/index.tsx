@@ -431,6 +431,15 @@ function Index() {
               through academic journals and book publishing initiatives. Submissions are considered
               according to each journal’s or publisher’s scope, editorial policies, peer-review
               procedures and acceptance criteria.
+
+              Selected high-quality abstracts will be considered for presentation at ICETBLS-2026.
+              Authors of selected contributions will be invited to submit their full-length manuscripts for possible 
+              publication in suitable Scopus-indexed journals or book series.
+
+              Following full-paper submission, authors may be requested by the respective journal editors or 
+              publishers to revise and reformat their manuscripts according to the prescribed journal or book-series guidelines.
+              All submissions will undergo the applicable editorial assessment and peer-review process.
+              Final publication decisions will be made by the respective editors and publishers, based on manuscript quality, scope, reviewer comments and editorial policies.
             </p>
           </div>
 
